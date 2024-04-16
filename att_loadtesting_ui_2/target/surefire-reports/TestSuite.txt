@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 11.109 s <<< FAILURE! - in TestSuite
+att_Jenkins.ATT_LoadTesting.loginToATT  Time elapsed: 0.609 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: no chrome binary at /opt/google/chrome/google-chrome 
+Host info: host: 'XCALWS0202', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-102-generic', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /opt/google/chrome/google-c..., extensions: []}}]}]
+	at att_Jenkins.ATT_LoadTesting.loginToATT(ATT_LoadTesting.java:44)
+
+att_Jenkins.ATT_LoadTesting.dockreceiving  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at att_Jenkins.ATT_LoadTesting.dockreceiving(ATT_LoadTesting.java:84)
+
+att_Jenkins.ATT_LoadTesting.flowByrMAD  Time elapsed: 10.103 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at att_Jenkins.ATT_LoadTesting.buildGaylord(ATT_LoadTesting.java:117)
+	at att_Jenkins.ATT_LoadTesting.buildMaterCarton_Pallet(ATT_LoadTesting.java:300)
+	at att_Jenkins.ATT_LoadTesting.flowByrMAD(ATT_LoadTesting.java:154)
+
